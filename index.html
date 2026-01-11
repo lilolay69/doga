@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOGGA - Yoga con Perros | Equilibrio y Conexión Canina</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Librería de animaciones AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado y Navegación -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -36,6 +38,7 @@
         </div>
     </header>
 
+    <!-- Sección Hero -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -47,11 +50,13 @@
         </div>
     </section>
 
+    <!-- Indicador de Scroll -->
     <div class="scroll-indicator">
         <div class="scroll-arrow">↓</div>
         <span class="scroll-text">Conoce nuestro equipo.</span>
     </div>
 
+    <!-- Sección Quiénes Somos -->
     <section id="about" class="who-we-are">
         <div class="who-we-are-content">
             <div class="who-we-are-left" data-aos="fade-right">
@@ -76,18 +81,22 @@
         </div>
     </section>
 
+    <!-- Sección Cursos (Vista de Listado) -->
     <section id="services" class="how-to-start">
         <div class="how-to-start-overlay"></div>
         <div class="container">
             <h2 class="section-title" data-aos="fade-up"> <strong>Nuestros</strong> Programas de Yoga con Perros:</h2>
             
+            <!-- Loading Spinner -->
             <div id="loading-spinner" class="loading-spinner">
                 <div class="spinner"></div>
-                <p>Cargando programas...</p>
+                <p>Cargando programas de yoga con perros...</p>
             </div>
             
+            <!-- Vista de Listado -->
             <div id="cursos-listado" class="services-grid"></div>
             
+            <!-- Vista de Detalle (Modal) -->
             <div id="curso-detalle-modal" class="modal">
                 <div class="modal-content">
                     <span class="modal-close">&times;</span>
@@ -97,21 +106,23 @@
         </div>
     </section>
 
+    <!-- Sección Nuestro Equipo -->
     <section id="team" class="team-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-down">Conoce a nuestros <strong>Instructores</strong></h2>
+            <h2 class="section-title" data-aos="fade-down">Conoce a tu <strong>Compañero de Yoga</strong></h2>
             
             <div class="team-generator-container" data-aos="fade-up">
-                <p class="team-description">Nuestros compañeros caninos son parte fundamental de cada sesión.</p>
-                
-                <div id="team-member-container" class="team-member-container has-content" style="display: flex;">
-                    <img id="foto-miembro" src="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg" alt="Compañero de yoga canino" class="team-member-image loaded">
-                    <p id="nombre-miembro" class="team-member-name">Max - Instructor Jefe</p>
+                <p class="team-description">Cada sesión de yoga con perros es única. Genera un compañero aleatorio para tu práctica.</p>
+                <button id="btn-generar-equipo" class="team-generate-btn">Generar compañero de yoga</button>
+                <div id="team-member-container" class="team-member-container">
+                    <img id="foto-miembro" src="" alt="Compañero de yoga canino" class="team-member-image">
+                    <p id="nombre-miembro" class="team-member-name"></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pie de Página -->
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
@@ -131,4 +142,9 @@
         </div>
     </footer>
 
-    <script
+    <!-- Librerías JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

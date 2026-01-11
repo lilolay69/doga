@@ -1,5 +1,6 @@
 
 
+/* ===== CSS Variables ===== */
 :root {
     --color-dark-gray: #2c2c2c;
     --color-olive-green: #556b2f;
@@ -12,7 +13,8 @@
     --transition: all 0.3s ease;
 }
 
-•⁠  ⁠{
+/* ===== Reset & Base Styles ===== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,6 +43,7 @@ body {
     color: var(--color-olive-green);
 }
 
+/* ===== Header & Navigation ===== */
 .header {
     position: fixed;
     top: 0;
@@ -59,6 +62,7 @@ body {
     align-items: center;
 }
 
+/* Logo Styles */
 .logo {
     display: flex;
     align-items: center;
@@ -126,6 +130,7 @@ body {
     color: var(--color-olive-green);
 }
 
+/* Navigation Menu */
 .nav {
     position: relative;
 }
@@ -165,6 +170,7 @@ body {
     width: 100%;
 }
 
+/* Hamburger Menu Toggle */
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -182,6 +188,7 @@ body {
     transition: var(--transition);
 }
 
+/* ===== Hero Section ===== */
 .hero {
     position: relative;
     min-height: 100vh;
@@ -261,7 +268,7 @@ body {
     box-shadow: 0 5px 15px rgba(85, 107, 47, 0.3);
 }
     
-
+/* ===== Scroll Indicator ===== */
 .scroll-indicator {
     background-color: var(--color-light-green);
     padding: 15px 20px;
@@ -295,6 +302,7 @@ body {
     font-weight: 400;
 }
 
+/* ===== Who We Are Section ===== */
 .who-we-are {
     padding: 0;
     margin: 0;
@@ -363,6 +371,7 @@ body {
     color: var(--color-olive-green);
 }
 
+/* Imagen a sangrado completo */
 .who-we-are-right {
     display: flex;
     width: 100%;
@@ -392,7 +401,7 @@ body {
     background: linear-gradient(135deg, #6b5b4a 0%, #4a4a4a 100%);
 }
 
-
+/* ===== How to Start Section ===== */
 .how-to-start {
     position: relative;
     padding: 100px 0;
@@ -506,6 +515,7 @@ body {
     font-weight: 300;
 }
 
+/* ===== Loading Spinner ===== */
 .loading-spinner {
     display: flex;
     flex-direction: column;
@@ -540,7 +550,7 @@ body {
     font-weight: 300;
 }
 
-
+/* ===== Modal de Detalle ===== */
 .modal {
     display: none;
     position: fixed;
@@ -726,7 +736,7 @@ body {
     box-shadow: 0 5px 15px rgba(85, 107, 47, 0.3);
 }
 
-
+/* ===== Sección Nuestro Equipo ===== */
 .team-section {
     padding: 100px 0;
     background-color: var(--color-off-white);
@@ -829,7 +839,7 @@ body {
     text-transform: capitalize;
 }
 
-
+/* Responsive para Equipo */
 @media (max-width: 768px) {
     .team-section {
         padding: 60px 0;
@@ -865,7 +875,7 @@ body {
     }
 }
 
-
+/* ===== Footer ===== */
 .footer {
     background-color: var(--color-olive-green);
     padding: 60px 0;
@@ -910,7 +920,9 @@ body {
     margin-right: 8px;
 }
 
+/* ===== Responsive Design ===== */
 
+/* Tablet Styles */
 @media (max-width: 968px) {
     .hero-title {
         font-size: 48px;
@@ -952,9 +964,9 @@ body {
     }
 }
 
-
+/* Mobile Styles */
 @media (max-width: 768px) {
-
+    /* Navigation */
     .nav-toggle {
         display: flex;
     }
@@ -989,7 +1001,7 @@ body {
         transform: rotate(-45deg) translate(7px, -7px);
     }
     
-  
+    /* Hero */
     .hero {
         min-height: 90vh;
         padding-top: 70px;
@@ -1007,7 +1019,7 @@ body {
         display: none;
     }
     
-
+    /* Who We Are */
     .who-we-are-content {
         grid-template-columns: 1fr;
         gap: 0;
@@ -1047,7 +1059,7 @@ body {
         border: 0px;
     }
     
-  
+    /* How to Start */
     .section-title {
         font-size: 28px;
     }
@@ -1070,7 +1082,7 @@ body {
         grid-template-columns: 1fr;
     }
     
- 
+    /* Footer */
     .footer {
         padding: 40px 0;
     }
@@ -1084,7 +1096,7 @@ body {
     }
 }
 
-
+/* Small Mobile */
 @media (max-width: 480px) {
     .who-we-are-left {
         padding: 30px 15px;
@@ -1120,7 +1132,7 @@ body {
         font-size: 14px;
     }
     
-
+    /* Footer */
     .footer {
         padding: 30px 0;
     }
